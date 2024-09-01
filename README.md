@@ -8,9 +8,6 @@ This will allow you to install Jekyll locally for testing and not have to worry 
 docker build -t jekyll-blog .
 ```
 
-## Create your GitHub repository
-
-
 ## Create a New Jekyll Site
 
 ### Host Terminal
