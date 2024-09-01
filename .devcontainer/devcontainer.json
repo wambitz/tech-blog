@@ -1,0 +1,32 @@
+{
+    "name": "Jekyll Personal Portfolio - Devcontainer",
+    "image": "jekyll-blog",
+    "workspaceFolder": "/srv/jekyll",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rebornix.ruby",
+                "bungcip.better-toml",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        },
+        "settings": {
+            "terminal.integrated.shell.linux": "/bin/bash"
+        }
+    },
+    
+    "forwardPorts": [4000],
+
+    "runArgs": [
+      "--rm",
+      "--name", "jekyll-blog"
+    ],
+    
+    "mounts": [
+      "source=${localWorkspaceFolder},target=/srv/jekyll,type=bind"
+    ],
+
+    "remoteUser": "root"
+}
+  

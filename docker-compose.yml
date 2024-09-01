@@ -1,0 +1,16 @@
+services:
+  jekyll-blog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jekyll-blog
+    container_name: jekyll-blog
+    volumes:
+      - ./:/srv/jekyll
+    ports:
+      - "4000:4000"
+    command: >
+      bash -c "bundle install &&
+               bundle exec jekyll serve --host 0.0.0.0 --livereload"
+    environment:
+      - JEKYLL_ENV=development
