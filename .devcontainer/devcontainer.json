@@ -1,6 +1,6 @@
 {
     "name": "Jekyll Personal Portfolio - Devcontainer",
-    "image": "jekyll-blog",
+    "image": "tech-blog",
     "workspaceFolder": "/srv/jekyll",
 
     "customizations": {
@@ -20,7 +20,7 @@
 
     "runArgs": [
       "--rm",
-      "--name", "jekyll-blog"
+      "--name", "tech-blog"
     ],
     
     "mounts": [
@@ -29,4 +29,4 @@
 
     "remoteUser": "root"
 }
-  
+  docker 

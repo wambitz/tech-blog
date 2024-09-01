@@ -1,10 +1,10 @@
 services:
-  jekyll-blog:
+  tech-blog:
     build:
       context: .
       dockerfile: Dockerfile
-    image: jekyll-blog
-    container_name: jekyll-blog
+    image: tech-blog
+    container_name: tech-blog
     volumes:
       - ./:/srv/jekyll
     ports:

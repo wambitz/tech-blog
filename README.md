@@ -5,21 +5,21 @@
 This will allow you to install Jekyll locally for testing and not have to worry Ruby dependencies.
 
 ```bash
-docker build -t jekyll-blog .
+docker build -t tech-blog .
 ```
 
 ## Create a New Jekyll Site
 
 ### Host Terminal
 
-This will create the `jekyll-blog` default content in the local `host` workspace and install all the template files for later to be mounted in `/srv/jekyll`.
+This will create the `tech-blog` default content in the local `host` workspace and install all the template files for later to be mounted in `/srv/jekyll`.
 
-
+<!-- TODO: Check if this needs to be removed -->
 ```bash
-docker run --rm --name jekyll-blog -v ${PWD}:/srv/jekyll jekyll-blog jekyll new . 
+docker run --rm --name tech-blog -v ${PWD}:/srv/jekyll tech-blog jekyll new . 
 
 # Use "--force" if you want to overwrite existent content, i.e.
-# docker run --rm --name jekyll-blog -v ${PWD}:/srv/jekyll jekyll-blog jekyll new . --force
+# docker run --rm --name tech-blog -v ${PWD}:/srv/jekyll tech-blog jekyll new . --force
 ```
 
 ### Devcontainer
@@ -48,10 +48,10 @@ Run in development mode, this will reload your page as you make changes.
 Both instructions need to be run together, otherwise jekyll cannot find the gems.
 
 ```bash
-docker run --rm --name jekyll-blog -v ${PWD}:/srv/jekyll -p 4000:4000 jekyll-blog bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload"
+docker run --rm --name tech-blog -v ${PWD}:/srv/jekyll -p 4000:4000 tech-blog bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload"
 ```
 
-Open your web browser and paste the URL: `http://localhost:4000/jekyll-blog`
+Open your web browser and paste the URL: `http://localhost:4000/tech-blog`
 
 ### Docker compose
 
@@ -67,7 +67,7 @@ To remove and stop the containers:
 docker-compose down
 ```
 
-Open your web browser and paste the URL: `http://localhost:4000/jekyll-blog`
+Open your web browser and paste the URL: `http://localhost:4000/tech-blog`
 
 ### Devcontainer
 
@@ -76,7 +76,7 @@ bundle install
 bundle exec jekyll serve --host 0.0.0.0 --livereload
 ```
 
-**Important**: Use `http://localhost:4001/jekyll-blog` instead of `4000`
+**Important**: Use `http://localhost:4001/tech-blog` instead of `4000`
 
 
 ## Create GitHub Page
