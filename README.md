@@ -1,4 +1,4 @@
-# Jekyll Blog on GitHub pages
+# Tech Blog on GitHub pages
 
 ## Create your Docker image
 
@@ -73,7 +73,7 @@ Open your web browser and paste the URL: `http://localhost:4000/tech-blog`
 
 ```bash
 bundle install
-bundle exec jekyll serve --host 0.0.0.0 --livereload
+bundle exec jekyll serve --host 0.0.0.0 --livereload # Add --draft to show drafts as posts
 ```
 
 **Important**: Use `http://localhost:4001/tech-blog` instead of `4000`
