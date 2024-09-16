@@ -1,5 +1,5 @@
 {
-    "name": "Jekyll Personal Portfolio - Devcontainer",
+    "name": "Jekyll Tech Blog - Devcontainer",
     "image": "tech-blog",
     "workspaceFolder": "/srv/jekyll",
 
@@ -29,4 +29,3 @@
 
     "remoteUser": "root"
 }
-  docker 
